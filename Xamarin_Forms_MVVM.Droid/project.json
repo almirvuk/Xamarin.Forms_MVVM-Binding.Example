@@ -1,0 +1,28 @@
+﻿{
+  "dependencies": {
+    "Microsoft.Bcl": "1.1.10",
+    "Microsoft.Bcl.Build": "1.0.21",
+    "Microsoft.Identity.Client": "1.0.304142221-alpha",
+    "Microsoft.Net.Http": "2.2.29",
+    "Newtonsoft.Json": "9.0.1",
+    "SQLitePCL": "3.8.7.2",
+    "Xam.Plugin.Connectivity": "2.2.12",
+    "Xam.Plugins.Settings": "2.1.0",
+    "Xamarin.Android.Support.Animated.Vector.Drawable": "23.3.0",
+    "Xamarin.Android.Support.Design": "23.3.0",
+    "Xamarin.Android.Support.v4": "23.3.0",
+    "Xamarin.Android.Support.v7.AppCompat": "23.3.0",
+    "Xamarin.Android.Support.v7.CardView": "23.3.0",
+    "Xamarin.Android.Support.v7.MediaRouter": "23.3.0",
+    "Xamarin.Android.Support.v7.RecyclerView": "23.3.0",
+    "Xamarin.Android.Support.Vector.Drawable": "23.3.0",
+    "Xamarin.Forms": "2.3.1.114"
+  },
+  "frameworks": {
+    "MonoAndroid,Version=v6.0": {
+    }
+  },
+  "runtimes": {
+    "win": {}
+  }
+}

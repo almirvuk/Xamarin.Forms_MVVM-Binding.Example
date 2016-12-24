@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin_Forms_MVVM.View.MyName"
+             BackgroundColor="White"
+             Title="MVVM Example"
+             xmlns:ViewModels="clr-namespace:Xamarin_Forms_MVVM.ViewModels;asembly=Xamarin_Forms_MVVM">
+
+    <!-- Setting context of page to a view model -->
+    <ContentPage.BindingContext>
+        <ViewModels:MyNameViewModel />
+    </ContentPage.BindingContext>
+
+    <StackLayout Orientation="Vertical"
+                 Margin="10"
+                 VerticalOptions="Center"
+                 HorizontalOptions="CenterAndExpand">
+
+        <Entry x:Name="MyNameEntry"
+               FontSize="Large"
+               TextColor="Black"
+               HorizontalTextAlignment="Center"
+               Text="{Binding MyName}"/>
+
+        <Label x:Name="Message"
+               FontSize="Large"
+               Text="{Binding Message}"/>
+
+        <Button Text="Introduce"
+                BackgroundColor="Black"
+                TextColor="White"
+                Command="{Binding IntroduceYourself}"/>
+    </StackLayout>
+</ContentPage>
