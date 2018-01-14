@@ -9,10 +9,18 @@ namespace Xamarin_Forms_MVVM.ViewModels {
 
     class MyNameViewModel : INotifyPropertyChanged {
 
-        public string MyName { get; set; }
+        private string _myName { get; set; }
+        public string MyName {
+
+            get { return _myName; }
+
+            set {
+                _myName = value;
+                OnPropertyChanged();
+            }
+        }
 
         private string _message { get; set; }
-
         public string Message {
 
             get { return _message; }
